@@ -1,5 +1,5 @@
 {
-	"name": "005_ppl_copy data with timestamp column",
+	"name": "005_ppl_copy data with fileName",
 	"properties": {
 		"activities": [
 			{
