@@ -10,7 +10,7 @@
 		"schema": [],
 		"typeProperties": {
 			"schema": "dev01",
-			"table": "powerBI"
+			"table": "user_data"
 		}
 	}
 }
