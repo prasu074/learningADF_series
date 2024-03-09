@@ -1,9 +1,9 @@
 {
 	"name": "keeplearningadf",
-	"location": "centralindia",
+	"location": "southindia",
 	"identity": {
 		"type": "SystemAssigned",
-		"principalId": "c77b5d25-0a17-4003-9ebb-622e97f3c983",
+		"principalId": "3c993324-8250-4da3-b152-791b3bbbe556",
 		"tenantId": "51131710-8d06-49ed-921e-47c51eb715b9"
 	}
 }
