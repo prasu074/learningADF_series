@@ -11,9 +11,13 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage1'"
 		},
+		"ls_sqldb_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'ls_sqldb'"
+		},
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
 			"type": "string",
-			"defaultValue": "https://keeplearningadls01.dfs.core.windows.net/"
+			"defaultValue": "https://keeplearningadls.dfs.core.windows.net/"
 		},
 		"containerUri": {
 			"type": "string",
@@ -44,6 +48,9 @@
 					},
 					"AzureDataLakeStorage1_accountKey": {
 						"value": "[parameters('AzureDataLakeStorage1_accountKey')]"
+					},
+					"ls_sqldb_connectionString": {
+						"value": "[parameters('ls_sqldb_connectionString')]"
 					},
 					"AzureDataLakeStorage1_properties_typeProperties_url": {
 						"value": "[parameters('AzureDataLakeStorage1_properties_typeProperties_url')]"

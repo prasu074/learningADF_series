@@ -8,8 +8,11 @@
 		"AzureDataLakeStorage1_accountKey": {
 			"value": ""
 		},
+		"ls_sqldb_connectionString": {
+			"value": ""
+		},
 		"AzureDataLakeStorage1_properties_typeProperties_url": {
-			"value": "https://keeplearningadls01.dfs.core.windows.net/"
+			"value": "https://keeplearningadls.dfs.core.windows.net/"
 		},
 		"containerUri": {
 			"value": ""
