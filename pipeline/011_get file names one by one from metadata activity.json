@@ -27,7 +27,7 @@
 							"dependsOn": [],
 							"userProperties": [],
 							"typeProperties": {
-								"variableName": "files",
+								"variableName": "list_of_files",
 								"value": {
 									"value": "@item().name",
 									"type": "Expression"
@@ -59,16 +59,44 @@
 					],
 					"storeSettings": {
 						"type": "AzureBlobFSReadSettings",
+						"recursive": true,
 						"enablePartitionDiscovery": false
 					},
 					"formatSettings": {
 						"type": "DelimitedTextReadSettings"
 					}
 				}
+			},
+			{
+				"name": "Set variable1",
+				"type": "SetVariable",
+				"dependsOn": [
+					{
+						"activity": "ForEach to collect metadata",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "output",
+					"value": {
+						"value": "@variables('list_of_files')",
+						"type": "Expression"
+					}
+				}
 			}
 		],
 		"variables": {
-			"files": {
+			"list_of_files": {
+				"type": "Array"
+			},
+			"output": {
 				"type": "Array"
 			}
 		},
