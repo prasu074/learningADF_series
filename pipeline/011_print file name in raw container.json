@@ -1,5 +1,5 @@
 {
-	"name": "011_get file names one by one from metadata activity",
+	"name": "011_print file name in raw container",
 	"properties": {
 		"activities": [
 			{
