@@ -10,7 +10,6 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "PowerBI_Employee_Data 2.csv",
 				"fileSystem": "raw"
 			},
 			"columnDelimiter": ",",
